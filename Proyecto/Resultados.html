@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Goaline</title>
+	<link rel="stylesheet" type="text/css" href="designResultados.css">
+	<link rel="stylesheet" type="text/css" href="designMenu.css">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  	<script src="scriptResumen.js"></script>
+  	<script src="scriptMenu.js"></script>
+</head>
+<body onload="cargarApi()">
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="Menu.html">GOALINE</a>
+    		</div>
+    		<div class="navbar-form navbar-left">
+          		<div class="wrap">
+          			<div class="search">
+            			<input type="text" class="searchTerm" placeholder="What are you looking for?" id="texto">
+              				<button type="submit" class="searchButton" value="Valor" onclick="funcionExtraerInput()">
+                				<i class="fas fa-search" style='color:white'></i>
+              				</button>
+          			</div>
+        		</div>
+        	</div>
+  		</div>
+	</nav>
+	<div id="divPadre">
+		<div class="loader" id="loader1"></div>
+		<!--<h3 class="subTitulo">Details</h3>
+        <div id="divHijo"></div>
+        <h4>Estadio manuelito</h4>
+        <hr>-->
+        <!--<h3 class="subTitulo">Stads</h3>-->
+    </div>
+	<section class="colocar">
+		<div id="competencia">
+		</div>
+		<div id="marcador">
+			<div class="loader" id="loader2"></div>
+            <!--<div class="contenedor" >
+                <div class="ab">0-0</div>
+                <div class="ab">Real Madrid vs Barcelona</div>
+            </div>
+            <p class="marca">finalizado</p>-->
+        </div>
+	</section>
+	<section class="colocar">
+		<!--<h3 class="subTitulo">Resumen</h3>
+		<hr>
+		<p class="marca">Goles</p>
+		<p class="marca">Real Madrid: Keylor navas '80</p>
+		<p class="marca">Barcelona: Leonel Messi '80</p>
+		<hr>
+		<p class="marca">Tarjetas Amarillas</p>
+		<p class="marca">Real Madrid: Keylor navas '80</p>
+		<p class="marca">Barcelona: Leonel Messi '80</p>
+		<hr>-->
+		<h3 class="subTitulo">Highlights</h3>
+		<div align="center" id="video">
+		</div>
+		<hr>
+	</section>
+	<div class="colocar">
+		<h3 class="subTitulo">Live</h3>
+		<div class="tiempo">
+			<div class="loader" id="loader3"></div>
+			<h3 class="subTitulo2" id ="time">No information</h3>
+		</div>
+		<hr>
+		<div id="eventos">
+			<!--<h4 class="subTitulo">70' gol</h4>
+			<h4 class="subTitulo">69' yellow card</h4>
+			<h4 class="subTitulo">70' substitue</h4>-->
+		</div>
+	</div>
+</body>
+</html>

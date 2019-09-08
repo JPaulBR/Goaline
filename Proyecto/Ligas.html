@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Goaline</title>
+	<link rel="stylesheet" type="text/css" href="designLigas.css">
+  <link rel="stylesheet" type="text/css" href="designMenu.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="scriptLigas.js"></script>
+  <script src="scriptMenu.js"></script>
+</head>
+<body onload="cargarTabla()">
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="Menu.html">GOALINE</a>
+    		</div>
+    		<div class="navbar-form navbar-left">
+            <div class="wrap">
+              <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?" id="texto">
+                  <button type="submit" class="searchButton" value="Valor" onclick="funcionExtraerInput()">
+                    <i class="fas fa-search" style='color:white'></i>
+                  </button>
+            </div>
+          </div>
+        </div>
+  		</div>
+	</nav>
+	<div class="contenedorPadre">
+    <div id="Liga">
+      <h3 class="subTitulo">
+        <div class="loader" id="loader3"></div>
+      </h3>
+    </div>
+		<div class="hija">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">Matches</a></li>
+    			<li><a data-toggle="tab" href="#menu1">Table</a></li>
+  			</ul>
+  			<div class="tab-content">
+    			<div id="home" class="tab-pane fade in active">
+      				<section class="colocar" id="colocar">
+						    <div class="loader"></div>
+					    </section>
+    			</div>
+    			<div id="menu1" class="tab-pane fade">
+    				<table class="table" id="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Club</th>
+                  <th scope="col">P</th>
+                  <th scope="col">W</th>
+                  <th scope="col">L</th>
+                  <th scope="col">GD</th>
+                  <th scope="col">Pts</th>
+                </tr>
+              </thead>
+              <tbody id="rata">
+                <div class="loader" id="loader2"></div>
+              </tbody>
+					  </table>	
+    			</div>
+  			</div>
+		</div>
+	</div>
+</body>
+</html>
